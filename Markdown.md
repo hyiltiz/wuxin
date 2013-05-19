@@ -1,7 +1,3 @@
-\begin_layout Chapter
-\end_layout
-
-\begin_layout Part
 # 无心法师
 \end_layout
 

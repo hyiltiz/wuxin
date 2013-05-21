@@ -1,0 +1,66 @@
+%% LyX 2.0.3 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[oneside,UTF8,adobefonts]{ctexbook}
+\usepackage[T1]{fontenc}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\makeatother
+\usepackage[setpagesize=false, % page size defined by xetex
+            unicode=false, % unicode breaks when used with xetex
+            xetex]{hyperref}
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={$author-meta$},
+            pdftitle={$title-meta$},
+            colorlinks=true,
+            urlcolor=$if(urlcolor)$$urlcolor$$else$blue$endif$,
+            linkcolor=$if(linkcolor)$$linkcolor$$else$magenta$endif$,
+            pdfborder={0 0 0}}
+
+\urlstyle{same}  % don't use monospace font for urls
+% Make links footnotes instead of hotlinks:
+\renewcommand{\href}[2]{#2\footnote{\url{#1}}}
+
+%strikeout
+\usepackage[normalem]{ulem}
+% avoid problems with \sout in headers with hyperref:
+\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
+\DeclareTextCommand{\nobreakspace}{T1}{\leavevmode\nobreak\ }
+
+
+\title{无心法师}
+\author{尼罗}
+%\date{}
+
+\begin{document}
+
+\maketitle
+
+\clearpage
+\thispagestyle{empty}
+\phantom{a}
+\vfill
+
+\newpage
+\thispagestyle{empty}
+%\centering{献给心爱的苏畅}
+%\vfill
+\addtocounter{page}{-1}
+\vspace*{\fill}
+\begin{center}
+献给心爱的苏畅\\
+感谢你深厚的友谊\\
+\end{center}
+\vspace*{\fill}
+\addtocounter{page}{-1}
+
+\hypersetup{linkcolor=black}
+\tableofcontents
+\setcounter{tocdepth}{3}
+%\tableofcontents{}
+
+%\include{content}
+\include{test}
+
+\enddocument
